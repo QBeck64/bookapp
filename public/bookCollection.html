@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="bookCollection.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>Book Collection</title>
     </head>
     <body>
@@ -10,6 +13,29 @@
             <h1>Book Collection</h1>
             <p>Store and list your favorite books and authors!</p>
         </div>
+        <div class="container">
+            <h1>Search For Books</h1>
+            <form id="book-search">
+                <input type="text" id="search-string" class="form-control">
+                <input type="submit" class="btn btn-success" value="Search!">
+            </form>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Collect</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th>Description</th>
+                        <th>Cover</th>
+                    </tr>
+                </thead>
+                <tbody id="results-table">
+                </tbody>
+            </table>
+            </div>
+
         <div class="container">
             <div class="row vertical-divider">
                 <div class="col-sm-4">
@@ -26,11 +52,13 @@
                 </div>
             </div>
         </div>
+
         <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous">
         </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="books.js"></script>
     </body>
 </html>
