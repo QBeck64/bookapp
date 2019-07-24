@@ -14,12 +14,30 @@
             <h1>Book Collection</h1>
             <p>Store and list your favorite books and authors!</p>
         </div>
+
         <div class="container">
             <h1>Search For Books</h1>
             <form id="book-search">
                 <input type="text" id="search-string" class="form-control">
                 <input type="submit" class="btn btn-success" value="Search!">
             </form>
+
+            <div class="infoContainer">
+                <div class="row vertical-divider">
+                    <div class="col-sm-4">
+                        <button id="getBooks">Get Books</button>
+                        <div id="books"></div>
+                    </div>
+                    <div class="col-sm-4">
+                        <select id="authors">
+                        </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <select id="categories">
+                        </select>
+                    </div>
+                </div>
+            </div>
 
             <table class="table">
                 <thead>
@@ -36,23 +54,6 @@
                 </tbody>
             </table>
             </div>
-
-        <div class="container">
-            <div class="row vertical-divider">
-                <div class="col-sm-4">
-                    <button id="getBooks">Get Books</button>
-                    <div id="books"></div>
-                </div>
-                <div class="col-sm-4">
-                    <button id="getAuthors">Get Authors</button>
-                    <div id="authors"></div>
-                </div>
-                <div class="col-sm-4">
-                    <button id="getCategories">Get Categories</button>
-                    <div id="categories"></div>
-                </div>
-            </div>
-        </div>
 
         <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"

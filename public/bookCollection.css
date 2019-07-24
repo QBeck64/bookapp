@@ -2,14 +2,6 @@
     background-color: aquamarine;
 }
 
-.row.vertical-divider [class*='col']:not(:last-child)::after {
-    background: #080808;
-    width: 1px;
-    content: "";
-    display:block;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    right: 0;
-    min-height: 70px;
-  }
+.infoContainer {
+    margin: 10px;
+}
